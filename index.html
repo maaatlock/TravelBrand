@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<body>
+<body data-spy="scroll" data-target="header" data-offset="50">
 	<head> 
 		<title>Travel around the globe</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
@@ -17,32 +17,34 @@
 
 		<div class="mainheader">
         	<h1>Travel the globe</h1>
+        	<h5>"He who does not travel, does not know the value of men"</h5>
+        	<h6>- Moorish Proverb</h6> 
         </div>
 
 
 		<div class="header">
-		<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="110"> 
-			<ul class="navbar-inverse"> 
-				<li><a href="#SectionPosts">Home</a></li>
-				<li><a href="#SectionTrips">Trips</a>
-					<!--<ul>
-						<li><a href="">Submenu1</a></li>
-						<li><a href="">Submenu2</a></li>
-						<li><a href="">Submenu3</a></li>
-						<li><a href="">Submenu4</a></li>
-					</ul>-->
-				</li>
-				<li class="dropdown"><a href="#SectionCities" class="dropdown-toggle" data-toggle="dropdown" >Cities<span class="caret"></span></a>
-					<ul> <!-- No es posible enlazar el "boton" si existe un submenu"-->
-						<li><a href="#SectionCitiesKrakow">Krakow</a></li>
-						<li><a href="#SectionCitiesPeter">St. Petersburg</a></li>
-						<li><a href="#SectionCitiesBarna">Barcelona</a></li>
-						<li><a href="#SectionCitiesBuda">Budapest</a></li>
-					</ul>
-				</li>
-				<li><a href="#SectionResources">Travel Resources</a></li>
-				<li><a href="#SectionAbout">About me</a></li>
-			</ul>
+		<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="170"> <!-- ajustar el "data-offset-top" a la altura que se quiera pegar en el top la barra de navegacion -->
+				<ul class="navbar-inverse"> 
+					<li><a href="#SectionPosts">Home</a></li>
+					<li><a href="#SectionTrips">Trips</a>
+						<!--<ul>
+							<li><a href="">Submenu1</a></li>
+							<li><a href="">Submenu2</a></li>
+							<li><a href="">Submenu3</a></li>
+							<li><a href="">Submenu4</a></li>
+						</ul>-->
+					</li>
+					<li class="dropdown"><a href="#SectionCities" class="dropdown-toggle" data-toggle="dropdown" >Cities<span class="caret"></span></a>
+						<ul> <!-- No es posible enlazar el "boton" si existe un submenu"-->
+							<li><a href="#SectionCitiesKrakow">Krakow</a></li>
+							<li><a href="#SectionCitiesPeter">St. Petersburg</a></li>
+							<li><a href="#SectionCitiesBarna">Barcelona</a></li>
+							<li><a href="#SectionCitiesBuda">Budapest</a></li>
+						</ul>
+					</li>
+					<li><a href="#SectionResources">Travel Resources</a></li>
+					<li><a href="#SectionAbout">About me</a></li>
+				</ul>
 			</nav>
 		</div>
 		<div id="sectionMenu">
@@ -64,7 +66,6 @@
 				<p>Sed at nisi in odio consequat auctor. Morbi tristique, massa non imperdiet mollis, augue tortor tristique urna, eget euismod libero orci sed erat. Integer porttitor magna at orci hendrerit luctus. Nam tincidunt nisl sagittis, tempor nunc nec, scelerisque risus. Mauris consequat, augue ac aliquet cursus, ipsum leo efficitur augue, ac viverra massa dui non mauris. Pellentesque vestibulum quam sed sollicitudin malesuada. Vestibulum commodo auctor aliquam. Nunc facilisis maximus augue, dignissim malesuada leo congue quis. Proin a pellentesque nisi.</p>
 
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate elementum nunc. In hac habitasse platea dictumst. Vivamus sit amet nisi a massa tempor elementum nec eu ligula. Nullam sed metus ante. In pharetra in orci ac congue. Aliquam molestie eget erat id suscipit. Morbi tempus vel nibh ac tempus. Donec interdum magna tortor, id tristique diam gravida sed. Cras eros turpis, imperdiet quis quam quis, cursus congue tortor. Vivamus sodales pulvinar eleifend. Curabitur aliquam tincidunt vulputate. Proin venenatis nec mauris ut vulputate. Donec rhoncus mi sed porttitor ornare. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla vulputate faucibus enim non mattis.</p>
-
 			</div>
 			<div id="SectionCities" class="container-fluid">		
 				<h2>cities</h2>
@@ -119,23 +120,7 @@
 			<div id="subsectionCities" class="container-fluid">
 			<p>Nam tincidunt nisl sagittis, tempor nunc nec, scelerisque risus. Mauris consequat, augue ac aliquet cursus, ipsum leo efficitur augue, ac viverra massa dui non mauris. Pellentesque vestibulum quam sed sollicitudin malesuada. Vestibulum commodo auctor aliquam. Nunc facilisis maximus augue, dignissim malesuada leo congue quis. Proin a pellentesque nisi.</p>
 			</div>
-
-			<!--Subsecciones del apartado Cities
-
-				<div id="Cities">
-					<div id="cKrakow" class="CitiesEurope">
-						<h3>Krakow</h3>
-						<p>Blablalblalblalbalbla...</p>
-					</div>
-
-					<div id="cPetersburg" class="CitiesEurope">
-						<h3>St. Petersburg</h3>
-						<p>Blablalblalblalbalbla...</p>
-					</div>
-				</div>
-			-->
-
-			
+		
 			<div id="SectionResources" class="container-fluid">
 				<h2>travel resources</h2>
 				

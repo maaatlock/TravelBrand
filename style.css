@@ -9,9 +9,9 @@
 	background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: bottom center; 
+    background-position: center bottom;
     position: relative;
-    height: 200px;
+    height: 250px;
     top: -60px;
     padding: 100px auto;
 }
@@ -22,8 +22,32 @@
 	font-style: oblique;
 	text-align: center;
 	padding: 50px;
+	margin-top: 60px;
 }
 
+.mainheader h5 {
+	background-color: #000;
+	margin-top: -50px;
+	padding: auto;
+	color: #FFF;
+	font-style: oblique;
+	font-weight: bolder;
+	margin-right: 250px;
+	width: 400px;
+	text-align: right;
+}
+
+.mainheader h6 {
+	background-color: #000;
+	margin-top: 10;
+	padding: auto;
+	color: #FFF;
+	font-style: oblique;
+	font-weight: bolder;
+	text-align: right;
+	margin-right: 250px;
+	width: 105px;
+}
 
 h2{
 	width: 400px;
@@ -72,7 +96,6 @@ h2{
   	width: 100%;
   	top: 183px;
   	margin-bottom: 0px;
-  	
   }
 
 
@@ -149,6 +172,7 @@ h2{
 
 #subsectionCities {
 	background-color: rgba(79, 50, 199, 0.7);
+	
 }
 
 /*barra de navegación V2.0*/
