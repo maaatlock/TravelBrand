@@ -1,5 +1,162 @@
 <!DOCTYPE html>
+<html>
+<body>
+	<head> 
+		<title>Travel around the globe</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
 
-<head>Travel around the globe</head>
+		<!-- Link externo a bootstrap y los scripts -->
 
-<body></body>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    </head>
+
+	
+
+		<div class="mainheader">
+        	<h1>Travel the globe</h1>
+        </div>
+
+
+		<div class="header">
+		<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="110"> 
+			<ul class="navbar-inverse"> 
+				<li><a href="#SectionPosts">Home</a></li>
+				<li><a href="#SectionTrips">Trips</a>
+					<!--<ul>
+						<li><a href="">Submenu1</a></li>
+						<li><a href="">Submenu2</a></li>
+						<li><a href="">Submenu3</a></li>
+						<li><a href="">Submenu4</a></li>
+					</ul>-->
+				</li>
+				<li class="dropdown"><a href="#SectionCities" class="dropdown-toggle" data-toggle="dropdown" >Cities<span class="caret"></span></a>
+					<ul> <!-- No es posible enlazar el "boton" si existe un submenu"-->
+						<li><a href="#SectionCitiesKrakow">Krakow</a></li>
+						<li><a href="#SectionCitiesPeter">St. Petersburg</a></li>
+						<li><a href="#SectionCitiesBarna">Barcelona</a></li>
+						<li><a href="#SectionCitiesBuda">Budapest</a></li>
+					</ul>
+				</li>
+				<li><a href="#SectionResources">Travel Resources</a></li>
+				<li><a href="#SectionAbout">About me</a></li>
+			</ul>
+			</nav>
+		</div>
+		<div id="sectionMenu">
+			<div id="SectionPosts" class="container-fluid">
+				<h2>May's post</h2>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate elementum nunc. In hac habitasse platea dictumst. Vivamus sit amet nisi a massa tempor elementum nec eu ligula. Nullam sed metus ante. In pharetra in orci ac congue. Aliquam molestie eget erat id suscipit. Morbi tempus vel nibh ac tempus. Donec interdum magna tortor, id tristique diam gravida sed. Cras eros turpis, imperdiet quis quam quis, cursus congue tortor. Vivamus sodales pulvinar eleifend. Curabitur aliquam tincidunt vulputate. Proin venenatis nec mauris ut vulputate. Donec rhoncus mi sed porttitor ornare. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla vulputate faucibus enim non mattis.</p>
+
+				<p>Sed at nisi in odio consequat auctor. Morbi tristique, massa non imperdiet mollis, augue tortor tristique urna, eget euismod libero orci sed erat. Integer porttitor magna at orci hendrerit luctus. Nam tincidunt nisl sagittis, tempor nunc nec, scelerisque risus. Mauris consequat, augue ac aliquet cursus, ipsum leo efficitur augue, ac viverra massa dui non mauris. Pellentesque vestibulum quam sed sollicitudin malesuada. Vestibulum commodo auctor aliquam. Nunc facilisis maximus augue, dignissim malesuada leo congue quis. Proin a pellentesque nisi.</p>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate elementum nunc. In hac habitasse platea dictumst. Vivamus sit amet nisi a massa tempor elementum nec eu ligula. Nullam sed metus ante. In pharetra in orci ac congue. Aliquam molestie eget erat id suscipit. Morbi tempus vel nibh ac tempus. Donec interdum magna tortor, id tristique diam gravida sed. Cras eros turpis, imperdiet quis quam quis, cursus congue tortor. Vivamus sodales pulvinar eleifend. Curabitur aliquam tincidunt vulputate. Proin venenatis nec mauris ut vulputate. Donec rhoncus mi sed porttitor ornare. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla vulputate faucibus enim non mattis.</p>
+
+			</div>
+			<div id="SectionTrips" class="container-fluid">
+				<h2>trips</h2>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate elementum nunc. In hac habitasse platea dictumst. Vivamus sit amet nisi a massa tempor elementum nec eu ligula. Nullam sed metus ante. In pharetra in orci ac congue. Aliquam molestie eget erat id suscipit. Morbi tempus vel nibh ac tempus. Donec interdum magna tortor, id tristique diam gravida sed. Cras eros turpis, imperdiet quis quam quis, cursus congue tortor. Vivamus sodales pulvinar eleifend. Curabitur aliquam tincidunt vulputate. Proin venenatis nec mauris ut vulputate. Donec rhoncus mi sed porttitor ornare. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla vulputate faucibus enim non mattis.</p>
+
+				<p>Sed at nisi in odio consequat auctor. Morbi tristique, massa non imperdiet mollis, augue tortor tristique urna, eget euismod libero orci sed erat. Integer porttitor magna at orci hendrerit luctus. Nam tincidunt nisl sagittis, tempor nunc nec, scelerisque risus. Mauris consequat, augue ac aliquet cursus, ipsum leo efficitur augue, ac viverra massa dui non mauris. Pellentesque vestibulum quam sed sollicitudin malesuada. Vestibulum commodo auctor aliquam. Nunc facilisis maximus augue, dignissim malesuada leo congue quis. Proin a pellentesque nisi.</p>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate elementum nunc. In hac habitasse platea dictumst. Vivamus sit amet nisi a massa tempor elementum nec eu ligula. Nullam sed metus ante. In pharetra in orci ac congue. Aliquam molestie eget erat id suscipit. Morbi tempus vel nibh ac tempus. Donec interdum magna tortor, id tristique diam gravida sed. Cras eros turpis, imperdiet quis quam quis, cursus congue tortor. Vivamus sodales pulvinar eleifend. Curabitur aliquam tincidunt vulputate. Proin venenatis nec mauris ut vulputate. Donec rhoncus mi sed porttitor ornare. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla vulputate faucibus enim non mattis.</p>
+
+			</div>
+			<div id="SectionCities" class="container-fluid">		
+				<h2>cities</h2>
+				
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate elementum nunc. In hac habitasse platea dictumst. Vivamus sit amet nisi a massa tempor elementum nec eu ligula. Nullam sed metus ante. In pharetra in orci ac congue. Aliquam molestie eget erat id suscipit. Morbi tempus vel nibh ac tempus. Donec interdum magna tortor, id tristique diam gravida sed. Cras eros turpis, imperdiet quis quam quis, cursus congue tortor. Vivamus sodales pulvinar eleifend. Curabitur aliquam tincidunt vulputate. Proin venenatis nec mauris ut vulputate. Donec rhoncus mi sed porttitor ornare. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla vulputate faucibus enim non mattis.</p>
+
+				<p>Sed at nisi in odio consequat auctor. Morbi tristique, massa non imperdiet mollis, augue tortor tristique urna, eget euismod libero orci sed erat. Integer porttitor magna at orci hendrerit luctus. Nam tincidunt nisl sagittis, tempor nunc nec, scelerisque risus. Mauris consequat, augue ac aliquet cursus, ipsum leo efficitur augue, ac viverra massa dui non mauris. Pellentesque vestibulum quam sed sollicitudin malesuada. Vestibulum commodo auctor aliquam. Nunc facilisis maximus augue, dignissim malesuada leo congue quis. Proin a pellentesque nisi.</p>
+			</div>
+
+			<div id="SectionCitiesKrakow" class="container-fluid">
+				<div id="krakowheader">
+					<h3>Krakow</h3>
+				</div>
+				<p>blablablalbalbalba</p>
+				<p>blablablalbalbalba</p>
+				<p>blablablalbalbalba</p>
+			</div>
+			
+			<div id="subsectionCities" class="container-fluid">
+			<p>Nam tincidunt nisl sagittis, tempor nunc nec, scelerisque risus. Mauris consequat, augue ac aliquet cursus, ipsum leo efficitur augue, ac viverra massa dui non mauris. Pellentesque vestibulum quam sed sollicitudin malesuada. Vestibulum commodo auctor aliquam. Nunc facilisis maximus augue, dignissim malesuada leo congue quis. Proin a pellentesque nisi.</p>
+			</div>
+
+			<div id="SectionCitiesPeter" class="container-fluid">
+				<h3>St. Petersburg</h3>
+				<p>blablablalbalbalba</p>
+				<p>blablablalbalbalba</p>
+				<p>blablablalbalbalba</p>
+			</div>
+
+			<div id="subsectionCities" class="container-fluid">
+			<p>Nam tincidunt nisl sagittis, tempor nunc nec, scelerisque risus. Mauris consequat, augue ac aliquet cursus, ipsum leo efficitur augue, ac viverra massa dui non mauris. Pellentesque vestibulum quam sed sollicitudin malesuada. Vestibulum commodo auctor aliquam. Nunc facilisis maximus augue, dignissim malesuada leo congue quis. Proin a pellentesque nisi.</p>
+			</div>
+
+			<div id="SectionCitiesBarna" class="container-fluid">
+				<h3>Barcelona</h3>
+				<p>blablablalbalbalba</p>
+				<p>blablablalbalbalba</p>
+				<p>blablablalbalbalba</p>
+			</div>
+
+			<div id="subsectionCities" class="container-fluid">
+			<p>Nam tincidunt nisl sagittis, tempor nunc nec, scelerisque risus. Mauris consequat, augue ac aliquet cursus, ipsum leo efficitur augue, ac viverra massa dui non mauris. Pellentesque vestibulum quam sed sollicitudin malesuada. Vestibulum commodo auctor aliquam. Nunc facilisis maximus augue, dignissim malesuada leo congue quis. Proin a pellentesque nisi.</p>
+			</div>
+
+			<div id="SectionCitiesBuda" class="container-fluid">
+				<h3>Budapest</h3>
+				<p>blablablalbalbalba</p>
+				<p>blablablalbalbalba</p>
+				<p>blablablalbalbalba</p>
+			</div>
+
+			<div id="subsectionCities" class="container-fluid">
+			<p>Nam tincidunt nisl sagittis, tempor nunc nec, scelerisque risus. Mauris consequat, augue ac aliquet cursus, ipsum leo efficitur augue, ac viverra massa dui non mauris. Pellentesque vestibulum quam sed sollicitudin malesuada. Vestibulum commodo auctor aliquam. Nunc facilisis maximus augue, dignissim malesuada leo congue quis. Proin a pellentesque nisi.</p>
+			</div>
+
+			<!--Subsecciones del apartado Cities
+
+				<div id="Cities">
+					<div id="cKrakow" class="CitiesEurope">
+						<h3>Krakow</h3>
+						<p>Blablalblalblalbalbla...</p>
+					</div>
+
+					<div id="cPetersburg" class="CitiesEurope">
+						<h3>St. Petersburg</h3>
+						<p>Blablalblalblalbalbla...</p>
+					</div>
+				</div>
+			-->
+
+			
+			<div id="SectionResources" class="container-fluid">
+				<h2>travel resources</h2>
+				
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate elementum nunc. In hac habitasse platea dictumst. Vivamus sit amet nisi a massa tempor elementum nec eu ligula. Nullam sed metus ante. In pharetra in orci ac congue. Aliquam molestie eget erat id suscipit. Morbi tempus vel nibh ac tempus. Donec interdum magna tortor, id tristique diam gravida sed. Cras eros turpis, imperdiet quis quam quis, cursus congue tortor. Vivamus sodales pulvinar eleifend. Curabitur aliquam tincidunt vulputate. Proin venenatis nec mauris ut vulputate. Donec rhoncus mi sed porttitor ornare. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla vulputate faucibus enim non mattis.</p>
+
+				<p>Sed at nisi in odio consequat auctor. Morbi tristique, massa non imperdiet mollis, augue tortor tristique urna, eget euismod libero orci sed erat. Integer porttitor magna at orci hendrerit luctus. Nam tincidunt nisl sagittis, tempor nunc nec, scelerisque risus. Mauris consequat, augue ac aliquet cursus, ipsum leo efficitur augue, ac viverra massa dui non mauris. Pellentesque vestibulum quam sed sollicitudin malesuada. Vestibulum commodo auctor aliquam. Nunc facilisis maximus augue, dignissim malesuada leo congue quis. Proin a pellentesque nisi.</p>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate elementum nunc. In hac habitasse platea dictumst. Vivamus sit amet nisi a massa tempor elementum nec eu ligula. Nullam sed metus ante. In pharetra in orci ac congue. Aliquam molestie eget erat id suscipit. Morbi tempus vel nibh ac tempus. Donec interdum magna tortor, id tristique diam gravida sed. Cras eros turpis, imperdiet quis quam quis, cursus congue tortor. Vivamus sodales pulvinar eleifend. Curabitur aliquam tincidunt vulputate. Proin venenatis nec mauris ut vulputate. Donec rhoncus mi sed porttitor ornare. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla vulputate faucibus enim non mattis.</p>
+				
+			</div>
+			<div id="SectionAbout" class="container-fluid">	
+				<h2>about me</h2>
+				
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate elementum nunc. In hac habitasse platea dictumst. Vivamus sit amet nisi a massa tempor elementum nec eu ligula. Nullam sed metus ante. In pharetra in orci ac congue. Aliquam molestie eget erat id suscipit. Morbi tempus vel nibh ac tempus. Donec interdum magna tortor, id tristique diam gravida sed. Cras eros turpis, imperdiet quis quam quis, cursus congue tortor. Vivamus sodales pulvinar eleifend. Curabitur aliquam tincidunt vulputate. Proin venenatis nec mauris ut vulputate. Donec rhoncus mi sed porttitor ornare. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla vulputate faucibus enim non mattis.</p>
+
+				<p>Sed at nisi in odio consequat auctor. Morbi tristique, massa non imperdiet mollis, augue tortor tristique urna, eget euismod libero orci sed erat. Integer porttitor magna at orci hendrerit luctus. Nam tincidunt nisl sagittis, tempor nunc nec, scelerisque risus. Mauris consequat, augue ac aliquet cursus, ipsum leo efficitur augue, ac viverra massa dui non mauris. Pellentesque vestibulum quam sed sollicitudin malesuada. Vestibulum commodo auctor aliquam. Nunc facilisis maximus augue, dignissim malesuada leo congue quis. Proin a pellentesque nisi.</p>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate elementum nunc. In hac habitasse platea dictumst. Vivamus sit amet nisi a massa tempor elementum nec eu ligula. Nullam sed metus ante. In pharetra in orci ac congue. Aliquam molestie eget erat id suscipit. Morbi tempus vel nibh ac tempus. Donec interdum magna tortor, id tristique diam gravida sed. Cras eros turpis, imperdiet quis quam quis, cursus congue tortor. Vivamus sodales pulvinar eleifend. Curabitur aliquam tincidunt vulputate. Proin venenatis nec mauris ut vulputate. Donec rhoncus mi sed porttitor ornare. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla vulputate faucibus enim non mattis.</p>
+				
+			</div>		
+		</div>
+	</body>
+</html>
+

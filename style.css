@@ -1,0 +1,208 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+.mainheader {
+	background-image: url(http://www.hotel-r.net/im/hotel/ge/old-city.jpg);
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom center; 
+    position: relative;
+    height: 200px;
+    top: -60px;
+    padding: 100px auto;
+}
+
+.mainheader h1 {
+	color: #FFF;
+	font-size: 50px;
+	font-style: oblique;
+	text-align: center;
+	padding: 50px;
+}
+
+
+h2{
+	width: 400px;
+	height: auto;
+	text-transform: uppercase;
+	color: #FFF;
+}
+
+
+#sectionMenu{
+	margin-top: 130px;
+	padding-top: 30px;
+	background: linear-gradient(to right, #0000ff 0%, #00ccff 100%);
+}
+
+
+#sectionMenu container-fluid {
+	padding-top:35px;
+	height:auto;
+	color: #fff;
+}
+
+
+#sectionMenu h2 {
+	margin: 30px 0;
+	color: #FFF;
+}
+
+#sectionMenu p {
+	margin: 15px auto;
+	color: #FFF;
+}
+
+.navbar {
+	min-width: auto; /* controla el tamaño que abarca la barra de navegación horizontalmente */ 
+}
+
+.navbar a {
+	font-size: 22px;
+}
+
+.navbar-nav {
+	overflow: hidden;
+  	position: fixed;
+  	top: 0;
+  	width: 100%;
+  	top: 183px;
+  	margin-bottom: 0px;
+  	
+  }
+
+
+
+/* ajustes para CSS del panel de navegacion fijado */
+
+ .affix {
+        top: 0px;
+        width: 100%;
+        z-index: 9999 !important;
+
+}
+      
+.affix + .container-fluid {
+        padding-top: 150px;
+        position: relative;
+     	}
+
+
+ #SectionPosts {background-color: linear-gradient(to right, #0000ff 0%, #00ccff 100%);} /* Si se cambia este color, hay que cambiar el color de background del body entero */
+ #SectionTrips {background-color: #673ab7;}
+ #SectionCities {background-color: #ff9800;}
+ #SectionResources {background-color: #00bcd4;}
+ #SectionAbout {background-color: #009688;}
+
+#SectionCitiesKrakow {
+	background-image: url(http://sumfinity.com/wp-content/uploads/2014/02/Mary-Basilica-Krakow.jpg);
+	background-position: center;
+	background-size: cover;
+	width: auto;
+	height: auto;
+	font-size: 20px;
+	padding: 15px 20px;
+}
+
+#SectionCitiesPeter {
+	background-image: url(http://static2.businessinsider.com/image/55f1b6509dd7cc25008b969b-1200/st-petersburg-savior-of-spilt-blood-chruch.jpg);
+	background-position: center;
+	background-size: cover;
+	width: auto;
+	height: auto;
+	font-size: 20px;
+	padding: 15px 20px;
+}
+
+
+#SectionCitiesBarna {
+	background-image: url(http://www.hoteles-catalonia.com/blog/wp-content/uploads/2016/02/barcelona-rutas-turisticas-alternativas.jpg);
+	background-position: center;
+	background-size: cover;
+	width: auto;
+	height: auto;
+	font-size: 20px;
+	padding: 15px 20px;
+}
+
+#SectionCitiesBuda {
+	background-image: url(http://buenavibra.es/wp-content/uploads/2016/04/budapest.jpg);
+	background-position: center;
+	background-size: cover;
+	width: auto;
+	height: auto;
+	font-size: 20px;
+	padding: 15px 20px;
+}
+
+
+.container-fluid h3 {
+	font-size: 30px;
+	color: #FFF;
+	margin: auto auto;
+}
+
+
+#subsectionCities {
+	background-color: rgba(79, 50, 199, 0.7);
+}
+
+/*barra de navegación V2.0*/
+
+
+			.header {
+				margin: -120px 0;
+				/*width:900px;*/
+				height: 40px;
+				display: infinite;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			
+		
+			.navbar-inverse > li { /* hace que la barra de naegación se extienda en linea */ 
+				float:left;
+			}
+
+			.navbar-inverse li {
+				min-width: 250px;	
+			}
+			
+			.navbar-inverse li a {
+				color:#fff;
+				text-decoration:none;
+				padding:20px 22px;
+				display:block;
+			}
+			
+			.navbar-inverse li a:hover {
+				background-color:#434343;
+
+			}
+			
+			.navbar-inverse li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+
+			}
+			
+			.navbar-inverse li:hover > ul {
+				display:block;
+
+			}
+			
+			.navbar-inverse li ul li {
+				position:relative;
+				background-color:#262626;
+				list-style-type: none;
+			}
+			
+			.navbar-inverse li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+
