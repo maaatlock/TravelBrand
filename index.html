@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<body data-spy="scroll" data-target="header" data-offset="50">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 	<head> 
 		<title>Travel around the globe</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
@@ -26,13 +26,13 @@
 		<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="170"> <!-- ajustar el "data-offset-top" a la altura que se quiera pegar en el top la barra de navegacion -->
 				<ul class="navbar-inverse"> 
 					<li><a href="#SectionPosts">Home</a></li>
-					<li><a href="#SectionTrips">Trips</a>
-						<!--<ul>
-							<li><a href="">Submenu1</a></li>
-							<li><a href="">Submenu2</a></li>
-							<li><a href="">Submenu3</a></li>
-							<li><a href="">Submenu4</a></li>
-						</ul>-->
+					<li class="dropdown"><a href="#SectionTrips" class="dropdown-toggle" data-toggle="dropdown">Trips<span class="caret"></span></a>
+						<ul>
+							<li><a href="#trip1Div">Trip1</a></li>
+							<li><a href="#">Trip2</a></li>
+							<li><a href="#">Trip3</a></li>
+							<li><a href="#">Trip4</a></li>
+						</ul>
 					</li>
 					<li class="dropdown"><a href="#SectionCities" class="dropdown-toggle" data-toggle="dropdown" >Cities<span class="caret"></span></a>
 						<ul> <!-- No es posible enlazar el "boton" si existe un submenu"-->
@@ -66,6 +66,29 @@
 				<p>Sed at nisi in odio consequat auctor. Morbi tristique, massa non imperdiet mollis, augue tortor tristique urna, eget euismod libero orci sed erat. Integer porttitor magna at orci hendrerit luctus. Nam tincidunt nisl sagittis, tempor nunc nec, scelerisque risus. Mauris consequat, augue ac aliquet cursus, ipsum leo efficitur augue, ac viverra massa dui non mauris. Pellentesque vestibulum quam sed sollicitudin malesuada. Vestibulum commodo auctor aliquam. Nunc facilisis maximus augue, dignissim malesuada leo congue quis. Proin a pellentesque nisi.</p>
 
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate elementum nunc. In hac habitasse platea dictumst. Vivamus sit amet nisi a massa tempor elementum nec eu ligula. Nullam sed metus ante. In pharetra in orci ac congue. Aliquam molestie eget erat id suscipit. Morbi tempus vel nibh ac tempus. Donec interdum magna tortor, id tristique diam gravida sed. Cras eros turpis, imperdiet quis quam quis, cursus congue tortor. Vivamus sodales pulvinar eleifend. Curabitur aliquam tincidunt vulputate. Proin venenatis nec mauris ut vulputate. Donec rhoncus mi sed porttitor ornare. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla vulputate faucibus enim non mattis.</p>
+
+				<!-- Pruebas con botones para ocultar y hacer visibles la sección de los viajes -->
+
+				<!-- BOTON VIAJE 1 -->
+				<div id="PrimerViaje" class="container-fluid"> 	
+					<button  id="type="button" onclick="OcultaViaje1()" class="btn btn-info">Trip1</button>
+						<div id="trip1Div">
+						  <p>Sed quis ornare risus, sit amet ornare arcu. Quisque ac tellus dolor. Integer auctor id enim sit amet laoreet. Phasellus placerat tortor odio, a fringilla justo ullamcorper at. Aliquam tincidunt aliquet quam, nec egestas mi malesuada at. Praesent placerat pellentesque eros eu efficitur. Mauris et ipsum viverra, consectetur nibh nec, dignissim erat. Suspendisse potenti. Morbi porttitor auctor augue non ornare. In vel laoreet tellus. Vestibulum non lacus nisi. Nunc luctus, dui vitae mollis laoreet, dui nunc imperdiet nisl, at facilisis lacus lectus eu mauris. Aliquam eget erat vehicula, tempus sapien ut, maximus nulla. Cras convallis ligula in ipsum facilisis lobortis. Aenean finibus in tellus ut commodo.</p>
+
+						  <img id="image1trip1" src="C:\Users\Hugo.MangasGarcia\Desktop\HTML\TravelBrand\TravelBrand-v2.0\img\p03vfmdq.jpg" alt="Taking off" width="600" height="300">
+
+						  <p>Sed quis ornare risus, sit amet ornare arcu. Quisque ac tellus dolor. Integer auctor id enim sit amet laoreet. Phasellus placerat tortor odio, a fringilla justo ullamcorper at. Aliquam tincidunt aliquet quam, nec egestas mi malesuada at. Praesent placerat pellentesque eros eu efficitur. Mauris et ipsum viverra, consectetur nibh nec, dignissim erat. Suspendisse potenti. Morbi porttitor auctor augue non ornare. In vel laoreet tellus. Vestibulum non lacus nisi. Nunc luctus, dui vitae mollis laoreet, dui nunc imperdiet nisl, at facilisis lacus lectus eu mauris. Aliquam eget erat vehicula, tempus sapien ut, maximus nulla. Cras convallis ligula in ipsum facilisis lobortis. Aenean finibus in tellus ut commodo.</p>
+						</div>		
+				</div>
+
+				<!-- BOTON VIAJE 1 -->
+				<div id="SegundoViaje" class="container-fluid">
+					<button type="button" onclick="Oculta()" class="btn btn-info">Trip2</button>
+
+
+				<!-- Fin de pruebas -->
+
+
 			</div>
 			<div id="SectionCities" class="container-fluid">		
 				<h2>cities</h2>
@@ -142,6 +165,25 @@
 				
 			</div>		
 		</div>
+
+		<!-- Zona para los scripts -->
+
+		<script>
+			function OcultaViaje1() {
+			    var x = document.getElementById('trip1Div');
+			    if (x.style.display === 'block') {
+			        x.style.display = 'none';
+			    } else {
+			        x.style.display = 'block';
+			    }
+			}
+		</script>
+
+
+
+
+
+
 	</body>
 </html>
 

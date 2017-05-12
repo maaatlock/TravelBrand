@@ -98,6 +98,22 @@ h2{
   	margin-bottom: 0px;
   }
 
+/*#PrimerViaje container-fluid {
+	height: auto;
+	width: auto;
+	background-color: linear-gradient(to right, #B7A63A 0%, #cec064 100%)
+	
+}*/
+
+#trip1Div {
+	display: none;
+	background: linear-gradient(to right, #ae9f37 0%, #e0d89e 100%);
+	
+}
+
+#trip1Div p {	
+	margin: 15px auto;
+}
 
 
 /* ajustes para CSS del panel de navegacion fijado */
